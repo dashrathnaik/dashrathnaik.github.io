@@ -76,7 +76,7 @@ window.onload =()=>{
     var source = context.createBufferSource(); //source node
     source.connect(context.destination); //connect source to speakers so we can hear it
     var request = new XMLHttpRequest();
-    request.open('GET', 'https://cors-anywhere.herokuapp.com/http://www.oddnews.in/wp-content/uploads/2018/10/origonal-happy-bday-many-people-voice.mp3', true); 
+    request.open('GET', 'https://dashrathnaik.github.io/dashrathnaik.github.io/origonal-happy-bday-many-people-voice.mp3', true); 
     request.responseType = 'arraybuffer'; //the  response is an array of bits
     request.onload = function() {
         context.decodeAudioData(request.response, function(response) {
